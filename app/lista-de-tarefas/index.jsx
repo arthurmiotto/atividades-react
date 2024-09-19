@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { View, FlatList, StyleSheet, Text, Pressable, TextInput, SafeAreaView } from "react-native";
+import { Link } from 'expo-router'
 
 const Data = [
   {
@@ -45,6 +46,7 @@ const Item = ({ item, onPress, onDelete }) => (
     </Pressable>
   </View>
 );
+
 
 const ListaTarefa = () => {
   const [data, setData] = useState(Data);
@@ -104,6 +106,7 @@ const ListaTarefa = () => {
         />
       </SafeAreaView>
     </View>
+    
   );
 };
 
